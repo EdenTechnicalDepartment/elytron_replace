@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "elytron_replace",
+  "version": "${version}",
+  "name": "elytron_replace",
+  "description": "鞘翅自动替换",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/elytron_replace/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.jandy.eden.elytron_replace.client.Elytron_replaceClient"
+    ],
+    "main": [
+      "me.jandy.eden.elytron_replace.Elytron_replace"
+    ]
+  },
+  "mixins": [
+    "elytron_replace.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
